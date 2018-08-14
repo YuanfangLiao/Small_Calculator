@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ISAS.calculatorproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:hasCode="true" android:enabled="true" android:killAfterRestore="true" android:restoreNeedsApplication="false">
+        <activity
+            android:name="com.ISAS.calculatorproject.MainActivity"
+            android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:hardwareAccelerated="true" android:stateNotNeeded="true" android:immersive="true" android:showOnLockScreen="true" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ISAS.calculatorproject.SecondActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+    </application>
+
+</manifest>

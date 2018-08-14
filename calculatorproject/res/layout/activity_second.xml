@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff808080"
+    android:orientation="vertical" >
+ 
+    <!-- 结果显示框 -->
+
+    <TextView
+        android:id="@+id/mem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:background="#666"
+        android:maxLines="1" 
+        android:gravity="center_vertical|right"/>
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:background="#666"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:gravity="center_vertical|right"
+        android:maxLines="2"
+        android:text="0"
+        android:textSize="27dp" />
+    
+    <!-- 接下去采TableRow的格式进行布局设计 -->
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666"        
+        android:gravity="right" >
+    </TableRow>                      
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+  
+         	<!-- 在角度和弧度之间切换 --> 
+            <!-- 正弦计算 -->
+            <!-- 余弦计算 -->
+            <!-- 正切计算 -->
+
+        <TextView
+            android:id="@+id/T"
+            android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|center"
+            android:text="reminder:" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+             android:gravity="left|center"
+             android:textSize="10dp"
+            android:text="Powered by CORN"
+            android:maxLines="2"  />
+            <!-- 阶乘计算 -->
+
+            <Button
+                android:id="@+id/c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/buttonstyle"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/bksp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle"
+                android:text="Bksp" />
+
+            <Button
+                android:id="@+id/divide"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle2"
+                android:text="÷" />
+            <!-- 退格键 -->
+                                                                                                              
+    </TableRow>                  
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+  
+         	<!-- 数字7 -->
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="(" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text=")" />
+
+        <Button
+            android:id="@+id/square"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="^" />
+
+        <Button
+            android:id="@+id/factorial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="n!" />
+
+            <Button android:id="@+id/seven"
+             android:text="7"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />
+            <!-- 数字8 -->
+            <Button android:id="@+id/eight"
+             android:text="8"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />    
+            <!-- 数字9 -->
+            <Button android:id="@+id/nine"
+             android:text="9"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />    
+            <!-- 除号 -->
+            <!-- 左括号 -->
+            <!-- 右括号 -->
+
+            <Button
+                android:id="@+id/mul"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle2"
+                android:text="×" />                                                                                           
+    </TableRow>        
+    <TableRow
+         android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+         >  
+         	<!-- 数字4 -->
+
+        <Button
+            android:id="@+id/sin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="sin" />
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/tan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="tan" />
+
+        <Button
+            android:id="@+id/sqrt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="√" />
+
+            <Button android:id="@+id/four"
+             android:text="4"
+               android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />
+            <!-- 数字5 -->
+            <Button android:id="@+id/five"
+             android:text="5"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3"/>
+            <!-- 数字6 -->    
+            <Button android:id="@+id/six"
+             android:text="6"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />
+            <!-- 乘号 -->
+            <!-- 开方 -->
+            <!-- 乘方 -->
+
+            <Button
+                android:id="@+id/sub"
+                android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle2"
+                android:text="-" />
+                                                                                                               
+    </TableRow>            
+    <TableRow
+         android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right"
+         >
+            <!-- 数字1 -->
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="log" />
+
+        <TextView
+            android:id="@+id/_drg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="    DEG"
+            android:gravity="center_vertical|center_vertical" 
+            android:textColor="#030303"  />
+
+        <Button
+            android:id="@+id/drg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="DRG" />
+
+        <Button
+            android:id="@+id/ln"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="ln" />
+   
+            <Button android:id="@+id/one"
+             android:text="1"
+               android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3"
+                 />
+            <!-- 数字2 -->
+            <Button android:id="@+id/two"
+             android:text="2"
+               android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3"/>
+            <!-- 数字3 -->    
+            <Button android:id="@+id/three"
+             android:text="3"
+               android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3" />
+            <!-- 减号 -->
+            <!-- 对数 -->
+            <!-- 自然对数 -->
+
+            <Button
+                android:id="@+id/add"
+               android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle2"
+                android:text="+" />
+                                                                                                   
+    </TableRow>
+
+       <TableRow
+           android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="right" >
+
+           <Button
+               android:id="@+id/exit"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:background="@drawable/buttonstyle"
+               android:text="exit" />
+
+           <Button
+               android:id="@+id/mc"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="2"
+               android:background="@drawable/buttonstyle"
+               android:text="MC" />
+
+           <Button
+               android:id="@+id/zero"
+              android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3"
+               android:text="0" />
+
+           <Button
+               android:id="@+id/dot"
+              android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+                android:background="@drawable/buttonstyle3"
+               android:text="." />
+
+           <Button
+               android:id="@+id/equal"
+             android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+                android:background="@drawable/buttonstyle2"
+               android:text="=" />
+
+       </TableRow>     
+</LinearLayout>
